@@ -3,14 +3,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 
 }
 body{
     width: 100%;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background:linear-gradient(#cad2e3,#a3c0e2);
+    /* background:linear-gradient(#cad2e3,#a3c0e2); */
+    background-image: url("./images/background.jpg");
+    z-index: -1;
+    
+    
+    
 }
+.profile-body{
+
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+.profile-body::after{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 500vh;
+    content: "";
+    top:0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 #logo{
     font-size: 35px;
@@ -127,9 +151,10 @@ nav .inner ul li a:hover{
     width: 100%;
     height: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
     z-index: -1;
 }
-section{
+.top-hero{
     width: 100%;
     height: 80vh;
     display: flex;
@@ -145,6 +170,7 @@ section{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 .hero::after{
     content: "";
@@ -155,6 +181,7 @@ section{
     width: 100%;
     height: 100%;
     opacity: 0.4;
+    border-radius: 20px;
 }
 .headline{
     position: absolute;
@@ -164,4 +191,133 @@ section{
     font-size: 100px;
     z-index: 1;
     white-space: nowrap;
+}
+
+.profile-title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    opacity: 0; 
+    
+}
+.profile-title.active{
+    opacity: 1;
+    transition: all 3s;
+}
+
+.profile-title h1{
+    color: white;
+    font-size: 4rem;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.img-wrap{
+    position: relative;
+    top:40%;
+    height: 40%;
+    width: 1px;
+    overflow: hidden;
+    opacity: 0;  
+}
+.img-wrap.active{
+    width: 40vw;
+    opacity: 1;
+    transition: opacity 1s,width 2s;
+}
+.img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.6);
+}
+.img-wrap.active > .img{
+    transform: scale(1);
+    transition: 1s ease-out;
+}
+
+.second-title{
+    position: absolute;
+    font-size: 2.3rem;
+    top: 75%;
+    left: 80px;
+    z-index: 2;
+    border-bottom: solid;
+    letter-spacing: 3px;
+    opacity: 0; 
+    transition:all 0.2s;
+}
+
+.second-title.active{
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+.text-area{
+    width: 60%;
+    position: absolute;
+    top: 85%;
+    left:80px;
+    z-index: 2;
+    opacity: 0; 
+    
+    
+    
+
+}
+.text-area.active{
+    opacity: 1;
+    transition: opacity 3s;
+}
+.text-area h3{
+    font-size: 1.6rem;
+}
+.text-area p{
+    line-height: 35px;
+    
+}
+.text-area ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.text-area ul li{
+    line-height: 35px;
+    
+}
+.future{
+    margin-top: 15px;
+}
+
+.endsection{
+    position: relative;
+}
+
+.return-button{
+    position: absolute;
+    right: 20%;
+    bottom: -70%;
+    border: solid 1px #eef;
+    border-radius: 10px;
+    transition: all 0.2s;
+} 
+.return-button:hover{
+    background-color: #eef;
+    transition: all 0.2s;
+}
+.return-button a{
+    color: white;
+    font-size: 1.2rem;
 }
