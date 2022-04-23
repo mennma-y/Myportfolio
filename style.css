@@ -4,12 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Poppins', sans-serif;
 
 }
 body{
     width: 100%;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
     /* background:linear-gradient(#cad2e3,#a3c0e2); */
     background-image: url("./images/background.jpg");
     z-index: -1;
@@ -22,6 +22,13 @@ body{
     height: 100%;
     width: 100%;
     background-attachment: fixed;
+    
+}
+.work-body{
+    width: 100%;
+    height: 650vh;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
 }
 .profile-body::after{
     position: absolute;
@@ -34,6 +41,18 @@ body{
     opacity: 0.5;
     z-index: -1;
 }
+.work-body::after{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 650vh;
+    content: "";
+    top:0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 
 #logo{
@@ -217,7 +236,7 @@ section{
     width: 100%;
     height: 100vh;
     /* overflow: hidden; */
-    z-index: 1;
+    /* z-index: 1; */
     margin-bottom: 20px;
 }
 .img-wrap{
@@ -253,7 +272,7 @@ section{
     font-size: 2.3rem;
     top: 75%;
     left: 80px;
-    z-index: 2;
+    z-index: 1;
     border-bottom: solid;
     letter-spacing: 3px;
     opacity: 0; 
@@ -270,7 +289,7 @@ section{
     position: absolute;
     top: 85%;
     left:80px;
-    z-index: 2;
+    z-index: 1;
     opacity: 0; 
     
     
@@ -321,3 +340,399 @@ section{
     color: white;
     font-size: 1.2rem;
 }
+
+.sec-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    position: relative;
+}
+
+.work-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+.main-title{
+    position:absolute;
+    top: 15%;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.content{
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .work-img{
+    position: relative;
+    width: 520px;
+    height: 700px;
+    opacity: 0.9;
+
+}
+.content .work-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+    /* border-radius: 10px; */
+    z-index: 10;
+}
+.content .text-box{
+    z-index: 1;
+    background: rgba(79, 79, 79, 0.1);
+    padding: 40px;
+    max-width: 490px;
+    transform: translate(-16px,60px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(79,79,79,0.1);
+    margin-top: 40px;
+}
+.content .text-box h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.media-icons{
+    padding-top: 100px;
+    z-index: 1;
+    position: relative;
+}
+
+.media-icons a{
+    font-size: 2rem;
+    margin: 60px;
+}
+.box2{
+    margin-top: 80px;
+}
+/* .sec-02{
+    position: relative;
+}
+
+.work-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+
+
+.content2{
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content2 .work-img2{
+    position: relative;
+    width: 520px;
+    height: 700px;
+    opacity: 0.9;
+
+}
+.content2 .work-img2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border: solid 1px black;
+    border-radius: 10px;
+    z-index: 10;
+}
+.content2 .text-box2{
+    z-index: 20;
+    background: rgba(79, 79, 79, 0.1);
+    padding: 40px;
+    max-width: 490px;
+    transform: translate(-16px,60px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid rgba(79,79,79,0.1);
+    margin-top: 40px;
+}
+.content2 .text-box2 h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.media-icons2{
+    padding-top: 100px;
+}
+
+.media-icons2 a{
+    font-size: 2rem;
+    margin: 60px;
+} */
+
+.container-2{
+    top: 85%;
+}
+.content .work-img2 img{
+    object-fit:contain;
+    height: 500px;
+
+}
+.container-3{
+    top: 125%;
+}
+.content .work-img3 img{
+    object-fit: contain;
+}
+.container-4{
+    top: 170%;
+}
+
+
+/* .button2{
+    position: absolute;
+    right: 20%;
+    bottom: -220%;
+    border: solid 1px #eef;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+
+.button2 a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.button2 a :hover{
+    background-color: #eef;
+    color: black;
+} */
+.return-button2{
+    position: absolute;
+    right: 20%;
+    bottom: -220%;
+    border: solid 1px #eef;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.return-button2 a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+.return-button2:hover{
+    background-color:grey;
+    transition: all 0.2s;
+    
+}
+
+.open .toggle-btn span:nth-child(3){
+    transform: translateY(-10px) rotate(-315deg);
+}
+
+
+/* ここからレスポンシブ対応 */
+
+@media screen and (max-width:875px) {
+    .headline{
+        font-size: 70px;
+    }
+    .hero img{
+        object-fit:revert;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .headline{
+        font-size:55px ;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .toggle-btn{
+        position: fixed;
+
+    }
+    #logo{
+        padding: 20px;
+    }
+    .headline{
+        font-size: 45px;
+    }
+    .hero img {
+        object-fit: fill;
+    }
+    .navArea.open nav{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .text-area.active p{
+        font-size: 15px;
+    }
+    .text-area.active ul{
+        font-size: 15px;
+    }
+    .endsection .second-title.active{
+        margin-top: 50px;
+    }
+    .endsection .text-area.active p{
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width:775px){
+    .second-title.active{
+        margin-top: 50px;
+    }
+    .text-area.active{
+        margin-top: 50px;
+    }
+    .text-area.active p{
+        font-size: 13px;
+    }
+    .text-area.active ul{
+        font-size: 13px;
+    }
+    .endsection .text-area.active p{
+        margin-top: 0px;
+    }
+    .text-area.active ul li{
+        line-height: 25px;
+    }
+    .text-area.active p{
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:666px) {
+    .profile-title.active h1{
+        font-size: 3rem;
+    }
+    .second-title.active{
+        font-size: 2rem;
+    }
+    .text-area.active h3{
+        font-size: 1.5rem;
+    }
+    .text-area.active p{
+        font-size: 11px;
+    }
+    .text-area.active ul{
+        font-size: 11px;
+    }
+    .img-wrap.active img{
+        height: 70%;
+        width: 70%;
+    }
+    .text-area.active ul li{
+        line-height: 25px;
+    }
+    .text-area.active p{
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:567px) {
+    .text-area.active ul li{
+        line-height: 25px;
+    }
+    .text-area.active p{
+        line-height: 25px;
+    }
+    .text-area.active p{
+        font-size: 9px;
+    }
+    .text-area.active ul{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .content .work-img img{
+        margin-left: 80px;
+        width: 85%;
+        object-fit: contain;
+    }
+    .content .text-box{
+        max-width: 400px;
+    }
+    .return-button2{
+        opacity: 0;
+    }
+    .content .text-box h3{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width:935px) {
+    .content .work-img img{
+        margin-left: 100px;
+        width: 70%;
+        object-fit: contain;
+    }
+    .content .text-box{
+        max-width: 360px;
+    }
+
+    .content .text-box h3{
+        font-size: 1.5rem;
+    }
+
+    .content .text-box p{
+        font-size: 14px;
+    }
+    .sec-01 .main-title{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .content .text-box{
+        max-width: 300px;
+        margin-right: 60px;
+    }
+    .content .text-box h3{
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+    .content .text-box p{
+        font-size: 12px;
+    }
+    .media-icons a{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width:745px) {
+    .content .work-img img{
+        margin-left: 150px;
+        width: 60%;
+        object-fit: contain;
+    }
+    .content .text-box{
+        max-width: 260px;
+        margin-right: 120px;
+    }
+    .content .text-box p{
+        font-size: 11px;
+    }
+    .content .text-box h3{
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+
+}
+/* @media screen and (max-width:640px) {
+    
+} */
