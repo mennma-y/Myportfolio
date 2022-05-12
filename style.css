@@ -733,6 +733,20 @@ section{
     }
 
 }
-/* @media screen and (max-width:640px) {
+@media screen and (max-width:650px) {
     
-} */
+    .content .work-img img{
+        margin-left: 180px;
+    }
+    .content .text-box{
+        margin-right: 143px;
+    }
+} 
+@media screen and (max-width:620px) {
+    .content .work-img img{
+        margin-left: 210px;
+    }
+    .content .text-box{
+        margin-right: 185px;
+    }
+}
